@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: task-manage-volumes.html 
+keywords: manage volumes, mount command, delete volume, edit volume, edit snapshot policy 
+summary: Você pode gerenciar volumes existentes conforme suas necessidades de storage mudam. Você pode exibir, editar, restaurar e excluir volumes. 
+---
+= Gerenciar volumes existentes
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode gerenciar volumes existentes conforme suas necessidades de storage mudam. Você pode exibir, editar, restaurar e excluir volumes.
+
+.Passos
+. Abra o ambiente de trabalho.
+. Passe o Mouse sobre o volume.
++
+image:screenshot_cvs_gcp_volume_hover_menu.png["Uma captura de tela do menu de volume que permite executar tarefas de volume"]
+
+. Gerencie seus volumes:
++
+[cols="30,70"]
+|===
+| Tarefa | Ação 
+
+
+| Exibir informações sobre um volume | Clique em *Info*. 
+
+
+| Editar um volume (incluindo política de instantâneos)  a| 
+.. Clique em *Editar*.
+.. Modifique as propriedades do volume e clique em *Update*.
+
+
+
+
+| Obtenha o comando de montagem NFS ou SMB  a| 
+.. Clique em *montar o volume*.
+.. Clique em *Copy* para copiar o(s) comando(s).
+
+
+
+
+| Criar uma cópia Snapshot sob demanda  a| 
+.. Clique em *criar uma cópia Snapshot*.
+.. Altere o nome, se necessário, e clique em *criar*.
+
+
+
+
+| Substitua o volume pelo conteúdo de uma cópia Snapshot  a| 
+.. Clique em *Reverter volume para instantâneo*.
+.. Selecione uma cópia Snapshot e clique em *Restore*.
+
+
+
+
+| Excluir uma cópia Snapshot  a| 
+.. Clique em *Excluir uma cópia Snapshot*.
+.. Selecione o instantâneo e clique em *Delete*.
+.. Clique em *Delete* novamente quando solicitado a confirmar.
+
+
+
+
+| Eliminar um volume  a| 
+.. Desmonte o volume de todos os clientes:
++
+*** Em clientes Linux, use o `umount` comando.
+*** Em clientes Windows, clique em *Disconnect network drive*.
+
+
+.. Selecione um volume e, em seguida, clique em *Delete*.
+.. Clique em *Delete* novamente para confirmar.
+
+
+|===
+

@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes' 
+summary: Saiba o que há de novo no Cloud Volumes Service para Google Cloud no BlueXP . 
+---
+= O que há de novo
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Saiba o que há de novo no Cloud Volumes Service para Google Cloud no BlueXP .
+
+
+
+== 9 de setembro de 2020
+
+
+
+=== Suporte ao Cloud Volumes Service para Google Cloud
+
+Agora você pode gerenciar o Cloud Volumes Service para Google Cloud diretamente do BlueXP :
+
+* Configure e crie um ambiente de trabalho
+* Crie e gerencie volumes NFSv3 e NFSv4,1 para clientes Linux e UNIX
+* Crie e gerencie volumes SMB 3.x para clientes Windows
+* Criar, excluir e restaurar snapshots de volume
+

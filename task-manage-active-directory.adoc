@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: task-manage-active-directory.html 
+keywords: active directory, dns, domain, dns servers, smb server 
+summary: Se você tiver alterado seus servidores DNS ou domínio do ative Directory, será necessário modificar o servidor SMB no Cloud Volumes Service para que ele possa continuar fornecendo armazenamento aos clientes. 
+---
+= Gerencie sua configuração do ative Directory
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se você tiver alterado seus servidores DNS ou domínio do ative Directory, será necessário modificar o servidor SMB no Cloud Volumes Service para que ele possa continuar fornecendo armazenamento aos clientes.
+
+.Passos
+. Abra o ambiente de trabalho.
+. Clique no image:screenshot_gallery_options.gif["Um ícone com três pontos"] botão na parte superior da página e clique em *Gerenciar ative Directory*.
++
+Se nenhum ative Directory estiver configurado, você poderá adicionar um agora. Se uma estiver configurada, pode modificar ou eliminar as definições utilizando o image:screenshot_gallery_options.gif["Um ícone com três pontos"] botão.
+
+. Especifique as configurações para o servidor SMB:
++
+[cols="25,75"]
+|===
+| Campo | Descrição 
+
+
+| Endereço IP primário do DNS | Os endereços IP dos servidores DNS que fornecem resolução de nomes para o servidor SMB. Use uma vírgula para separar os endereços IP ao fazer referência a vários servidores, por exemplo, 172.31.25.223, 172.31.2.74. 
+
+
+| Ative Directory Domain para aderir | O FQDN do domínio do ative Directory (AD) ao qual você deseja que o servidor SMB se associe. 
+
+
+| Nome NetBIOS do servidor SMB | Um nome NetBIOS para o servidor SMB que será criado. 
+
+
+| Credenciais autorizadas para ingressar no domínio | O nome e a senha de uma conta do Windows com Privileges suficiente para adicionar computadores à unidade organizacional especificada (ou) dentro do domínio do AD. 
+
+
+| Unidade organizacional | A unidade organizacional dentro do domínio AD a associar ao servidor SMB. A predefinição é computadores para ligações ao seu próprio servidor Windows ative Directory. 
+|===
+. Clique em *Salvar* para salvar suas configurações.
+

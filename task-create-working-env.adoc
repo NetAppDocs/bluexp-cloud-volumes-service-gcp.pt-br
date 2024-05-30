@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: task-create-working-env.html 
+keywords: cloud volumes service for gcp, google cloud, cloud volumes, create cloud volumes, discover cloud volumes service for gcp, cloud volumes service subscription, discover cloud volumes service subscription, discover region, allowed clients, create snapshots 
+summary: Crie um ambiente de trabalho do Cloud Volumes Service para Google Cloud no BlueXP  para criar e gerenciar volumes e snapshots. 
+---
+= Crie um ambiente de trabalho do Cloud Volumes Service para o Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Crie um ambiente de trabalho do Cloud Volumes Service para Google Cloud no BlueXP  para que você possa criar e gerenciar volumes e snapshots.
+
+Independentemente de você já ter criado volumes a partir do Console do Google Cloud ou se acabou de se inscrever no Cloud Volumes Service para o Google Cloud e ainda não tiver volumes, a primeira etapa é criar um ambiente de trabalho para os volumes com base na assinatura do Google Cloud.
+
+Se o Cloud volumes já existir para essa assinatura, os volumes aparecerão no novo ambiente de trabalho. Se você ainda não adicionou nenhum volume de nuvem para a assinatura do Google Cloud, faça isso depois de criar o novo ambiente de trabalho.
+
+
+TIP: Se você tiver assinaturas e volumes em vários projetos do Google Cloud, precisará executar essa tarefa para cada projeto.
+
+.Antes de começar
+Você deve ter as seguintes informações disponíveis ao adicionar uma assinatura para cada projeto:
+
+* Credenciais da conta de serviço (chave privada JSON que você baixou)
+* Nome do projeto
+
+
+.Passos
+. No menu de navegação BlueXP , selecione *armazenamento > tela*.
+. Na página Canvas, clique em *Adicionar ambiente de trabalho* e selecione *Google Cloud Platform*.
+. Ao lado de Cloud Volumes Service, selecione *Discover*.
+. Forneça informações sobre sua assinatura do Cloud Volumes Service:
++
+.. Introduza o nome do ambiente de trabalho que pretende utilizar.
+.. Copie/cole a chave privada JSON que você baixou nas etapas anteriores.
+.. Selecione o nome do seu projeto Google Cloud.
+.. Clique em *continuar*.
++
+image:screenshot_add_cvs_gcp_credentials.png["Uma captura de tela da adição de credenciais para uma assinatura do Cloud Volumes Service para o Google Cloud."]
+
+
+
+
+
+.Resultado
+O BlueXP  exibe seu ambiente de trabalho do Cloud Volumes Service for Google Cloud.
+
+image:screenshot_cvs_gcp_cloud.png["Uma captura de tela do ambiente de trabalho do Cloud Volumes Service para o Google Cloud."]
+
+Se o Cloud volumes já existir para essa assinatura, os volumes aparecerão no novo ambiente de trabalho. Você pode adicionar volumes de nuvem adicionais do BlueXP .
+
+Se não houver volumes de nuvem para essa assinatura, crie-os agora.
+
+.O que se segue?
+link:task-create-volumes.html["Comece a criar volumes"].

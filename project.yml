@@ -1,0 +1,52 @@
+---
+settings:
+  name: Cloud Volumes Service for Google Cloud
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: pt-br,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: Cloud Volumes Service para Google Cloud docs
+    url: "/index.html"
+  - title: Notas de lançamento
+    entries:
+    - title: O que há de novo
+      url: "/whats-new.html"
+  - title: Comece agora
+    entries:
+    - title: Saiba mais sobre o Cloud Volumes Service
+      url: "/concept-cvs-gcp.html"
+    - title: Fluxo de trabalho de introdução
+      url: "/task-quick-start.html"
+    - title: Configure o Google Cloud
+      url: "/task-set-up-google-cloud.html"
+    - title: Crie um ambiente de trabalho
+      url: "/task-create-working-env.html"
+  - title: Use o Cloud Volumes Service para Google Cloud
+    entries:
+    - title: Crie e monte volumes
+      url: "/task-create-volumes.html"
+    - title: Gerenciar volumes existentes
+      url: "/task-manage-volumes.html"
+    - title: Gerenciar snapshots do Cloud volumes
+      url: "/task-manage-snapshots.html"
+    - title: Gerencie sua configuração do ative Directory
+      url: "/task-manage-active-directory.html"
+    - title: Remova o Cloud Volumes Service
+      url: "/task-remove-working-env.html"
+  - title: Conhecimento e apoio
+    entries:
+    - title: Registre-se para obter suporte
+      url: "/task-support-registration.html"
+    - title: Obtenha ajuda
+      url: "/task-get-help.html"
+  - title: Avisos legais
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP
+  repo: bluexp-family
