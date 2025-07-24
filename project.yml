@@ -1,7 +1,6 @@
 ---
 settings:
   name: Cloud Volumes Service for Google Cloud
-  platform: cloud
   internal:
     pdf_enabled: true
   prod:
